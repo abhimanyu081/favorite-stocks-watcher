@@ -1,0 +1,8 @@
+.home-container {
+  display: flex;
+  background: #fff;
+
+  text-align: center;
+  margin-top: 50px;
+  justify-content: space-between;
+}

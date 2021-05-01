@@ -87,6 +87,19 @@ class Register extends Component {
     if (isValid) {
       console.log(this.state);
 
+      fetch("http://localhost:8090/auth/register", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        // We convert the React state to JSON and send it as the POST body
+        body: JSON.stringify(this.state),
+      }).then(function (response) {
+        console.log(response);
+        return response.json();
+      });
+
       //reset form
       this.setState(intialState);
     }
@@ -94,7 +107,7 @@ class Register extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="form-container">
         <div className="title">Register</div>
         <div className="content">
           <form action="#" id="register" onSubmit={this.handleFormSubmit}>

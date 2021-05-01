@@ -1,0 +1,37 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: -1px 1px #fff, -2px 2px #fff, -3px 3px #fff, -4px 4px #fff,
+    -5px 5px #fff;
+}
+
+.login-btn {
+  background-color: rgb(72, 72, 199);
+  border-radius: 4px;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  display: inline-block;
+}
+.login-btn:hover {
+  background-color: #282abb;
+}
+
+.user {
+  vertical-align: 10;
+}
+
+.user-profile-photo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 99px;
+  border: 0;
+}
